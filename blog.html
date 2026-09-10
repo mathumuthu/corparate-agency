@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Stackly Digital Agency</title>
+  <meta name="description" content="Read the latest insights, trends, and tips on digital marketing, web development, SEO, and technology from Stackly's experts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="header.css">
+<!-- <base target="_blank"> -->
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="preloader-text">STACKLY</div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" style="position:fixed;top:0;left:0;height:3px;background:var(--gradient-1);z-index:1001;width:0%;transition:width 0.1s;"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="index.html" class="header-logo">
+      <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=100&h=100&fit=crop" alt="Stackly Logo">
+      <span class="header-logo-text">Stackly</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav-wrapper">
+      <ul class="header-nav">
+        <li class="header-nav-item"><a href="index.html" class="header-nav-link">Home</a></li>
+        <li class="header-nav-item"><a href="about.html" class="header-nav-link">About Us</a></li>
+        <li class="header-nav-item"><a href="service.html" class="header-nav-link">Services</a></li>
+        <li class="header-nav-item"><a href="blog.html" class="header-nav-link">Articles</a></li>
+        <li class="header-nav-item"><a href="contact.html" class="header-nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Right Side: Email + Login -->
+    <div class="header-right">
+      <a href="mailto:info@stackly.com" class="header-email">
+        <i class="fas fa-envelope"></i>
+        <span>info@stackly.com</span>
+      </a>
+      <a href="login.html" class="header-login">
+        <i class="fas fa-user"></i>
+        <span>Login</span>
+      </a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Mobile Navigation Panel -->
+<aside class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo">
+      <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=100&h=100&fit=crop" alt="Stackly Logo">
+      <span>Stackly</span>
+    </a>
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <ul class="mobile-nav-list">
+    <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+    <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About Us</a></li>
+    <li class="mobile-nav-item"><a href="service.html" class="mobile-nav-link">Services</a></li>
+    <li class="mobile-nav-item"><a href="agency.html" class="mobile-nav-link">Agency</a></li>
+    <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+  </ul>
+  <div class="mobile-nav-actions">
+    <a href="mailto:info@stackly.com" class="mobile-nav-email">
+      <i class="fas fa-envelope"></i>
+      <span>info@stackly.com</span>
+    </a>
+    <a href="login.html" class="mobile-nav-login">
+      <i class="fas fa-user"></i>
+      <span>Login</span>
+    </a>
+  </div>
+</aside>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+      <h1>Our <span class="text-gradient">Blog</span></h1>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog-page section-padding">
+    <div class="container">
+      <div class="row">
+        <!-- Blog Posts -->
+        <div class="col-lg-8">
+          <!-- Featured Article -->
+          <div class="blog-card mb-4 reveal">
+            <div class="blog-img" style="height:350px;">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop" alt="Featured Article">
+              <span class="blog-category">Featured</span>
+            </div>
+            <div class="blog-content" style="padding:2rem;">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> January 20, 2026</span>
+                <span><i class="far fa-user"></i> James Wilson</span>
+                <span><i class="far fa-comment"></i> 24 Comments</span>
+              </div>
+              <h4 style="font-size:1.5rem;">The Future of AI in Digital Marketing: Trends to Watch in 2026</h4>
+              <p>Artificial intelligence is reshaping the digital marketing landscape at an unprecedented pace. From predictive analytics to automated content creation, AI tools are becoming essential for marketers who want to stay competitive. In this comprehensive guide, we explore the most impactful AI trends that will define digital marketing strategies in 2026.</p>
+              <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Blog Grid -->
+          <div class="row g-4">
+            <div class="col-md-6 reveal">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=500&h=300&fit=crop" alt="Blog Post">
+                  <span class="blog-category">SEO</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Jan 18, 2026</span>
+                    <span><i class="far fa-user"></i> Daniel Kim</span>
+                  </div>
+                  <h4>10 SEO Strategies That Will Dominate 2026</h4>
+                  <p>Discover cutting-edge SEO techniques to rank higher and drive more organic traffic to your website.</p>
+                  <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop" alt="Blog Post">
+                  <span class="blog-category">Design</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Jan 15, 2026</span>
+                    <span><i class="far fa-user"></i> Emily Rodriguez</span>
+                  </div>
+                  <h4>UI/UX Trends Shaping Digital Experiences</h4>
+                  <p>From glassmorphism to micro-interactions, learn about design trends defining modern user experiences.</p>
+                  <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500&h=300&fit=crop" alt="Blog Post">
+                  <span class="blog-category">Social Media</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Jan 12, 2026</span>
+                    <span><i class="far fa-user"></i> Sophia Lee</span>
+                  </div>
+                  <h4>Social Media Marketing Strategies for 2026</h4>
+                  <p>Maximize your social media ROI with these proven strategies and platform-specific tactics.</p>
+                  <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop" alt="Blog Post">
+                  <span class="blog-category">Development</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Jan 10, 2026</span>
+                    <span><i class="far fa-user"></i> Marcus Johnson</span>
+                  </div>
+                  <h4>Modern Web Development Frameworks Compared</h4>
+                  <p>A detailed comparison of React, Vue, Angular, and Svelte for your next project.</p>
+                  <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Blog Post">
+                  <span class="blog-category">Analytics</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Jan 8, 2026</span>
+                    <span><i class="far fa-user"></i> Alex Morgan</span>
+                  </div>
+                  <h4>Data-Driven Decision Making for Businesses</h4>
+                  <p>Learn how to leverage analytics and data to make smarter business decisions.</p>
+                  <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 reveal">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=500&h=300&fit=crop" alt="Blog Post">
+                  <span class="blog-category">Branding</span>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <span><i class="far fa-calendar"></i> Jan 5, 2026</span>
+                    <span><i class="far fa-user"></i> Olivia Chen</span>
+                  </div>
+                  <h4>Building a Brand That Stands Out in 2026</h4>
+                  <p>Essential branding strategies to differentiate your business in a crowded marketplace.</p>
+                  <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="Blog pagination" class="mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="404.html"><i class="fas fa-chevron-left"></i></a></li>
+              <li class="page-item active"><a class="page-link" href="404.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="404.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="404.html">3</a></li>
+              <li class="page-item"><a class="page-link" href="404.html"><i class="fas fa-chevron-right"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+          <div class="blog-sidebar">
+            <!-- Search -->
+            <div class="sidebar-widget">
+              <h5>Search</h5>
+              <div class="search-box">
+                <input type="text" placeholder="Search articles...">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-widget">
+              <h5>Categories</h5>
+              <ul class="category-list">
+                <li><a href="404.html">SEO <span>12</span></a></li>
+                <li><a href="404.html">Web Development <span>8</span></a></li>
+                <li><a href="404.html">UI/UX Design <span>6</span></a></li>
+                <li><a href="404.html">Digital Marketing <span>15</span></a></li>
+                <li><a href="404.html">Branding <span>5</span></a></li>
+                <li><a href="404.html">AI & Technology <span>10</span></a></li>
+                <li><a href="404.html">Business Strategy <span>7</span></a></li>
+              </ul>
+            </div>
+
+            <!-- Popular Posts -->
+            <div class="sidebar-widget">
+              <h5>Popular Posts</h5>
+              <div class="popular-post">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=100&h=100&fit=crop" alt="Post">
+                <div>
+                  <h6>The Future of AI in Marketing</h6>
+                  <span><i class="far fa-calendar"></i> Jan 20, 2026</span>
+                </div>
+              </div>
+              <div class="popular-post">
+                <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=100&h=100&fit=crop" alt="Post">
+                <div>
+                  <h6>10 SEO Strategies for 2026</h6>
+                  <span><i class="far fa-calendar"></i> Jan 18, 2026</span>
+                </div>
+              </div>
+              <div class="popular-post">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=100&h=100&fit=crop" alt="Post">
+                <div>
+                  <h6>UI/UX Trends for 2026</h6>
+                  <span><i class="far fa-calendar"></i> Jan 15, 2026</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="sidebar-widget">
+              <h5>Tags</h5>
+              <div class="tag-cloud">
+                <a href="404.html">SEO</a>
+                <a href="404.html">Web Design</a>
+                <a href="404.html">AI</a>
+                <a href="404.html">Marketing</a>
+                <a href="404.html">Branding</a>
+                <a href="404.html">UX</a>
+                <a href="404.html">Development</a>
+                <a href="404.html">Analytics</a>
+                <a href="404.html">Social Media</a>
+                <a href="404.html">Strategy</a>
+              </div>
+            </div>
+
+            <!-- Author -->
+            <div class="sidebar-widget">
+              <h5>About the Author</h5>
+              <div class="text-center p-3" style="background:var(--light);border-radius:var(--radius);">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" alt="Author" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:1rem;">
+                <h6 style="margin-bottom:0.3rem;">Alex Morgan</h6>
+                <p style="font-size:0.85rem;color:var(--gray);">CEO & Founder at Stackly. Digital strategist with 15+ years of experience.</p>
+                <div class="footer-social" style="justify-content:center;margin-top:0.5rem;">
+                  <a href="404.html"><i class="fab fa-twitter"></i></a>
+                  <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="404.html"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Want to Stay Updated?</h2>
+        <p>Subscribe to our newsletter for the latest insights, trends, and exclusive content.</p>
+        <a href="contact.html" class="btn-cta-white ripple">
+          <span>Subscribe Now</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <a href="index.html" class="footer-brand">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=100&h=100&fit=crop" alt="Stackly Logo">
+            <span>Stackly</span>
+          </a>
+          <p class="footer-desc">A premium digital agency crafting innovative solutions that drive growth, engagement, and measurable results for businesses worldwide.</p>
+          <div class="footer-social">
+            <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="404.html" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="404.html" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Web Design</a></li>
+            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Development</a></li>
+            <li><a href="service.html"><i class="fas fa-chevron-right"></i> SEO</a></li>
+            <li><a href="service.html"><i class="fas fa-chevron-right"></i> Branding</a></li>
+            <li><a href="service.html"><i class="fas fa-chevron-right"></i> AI Solutions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5>Newsletter</h5>
+          <p style="font-size:0.9rem;color:rgba(255,255,255,0.6);margin-bottom:1rem;">Subscribe to get the latest updates and insights.</p>
+          <form class="newsletter-form" action="404.html" method="get">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <h5 style="margin-top:1.5rem;">Contact Info</h5>
+          <ul class="footer-links footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Digital Street, Tech City, TC 10001</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> hello@stackly.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p> 2026 Stackly Digital Agency. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
