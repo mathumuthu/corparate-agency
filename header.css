@@ -1,0 +1,29 @@
+/* Stackly unified header theme */
+:root {
+  --header-bg: #071c24;
+  --header-bg-scrolled: rgba(7, 28, 36, 0.94);
+  --header-border: rgba(184, 233, 134, 0.14);
+  --gold: #b8e986;
+  --gold-light: #d1f5ad;
+  --gold-dark: #7fb45e;
+  --text-muted: #9bb4b5;
+  --text-white: #f4fbf8;
+}
+
+.site-header {
+  background: var(--header-bg);
+  border-bottom-color: var(--header-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.site-header.scrolled { background: var(--header-bg-scrolled); box-shadow: 0 8px 30px rgba(0,0,0,0.24); }
+.header-logo-text, .header-nav-link, .header-login { color: var(--text-white); }
+.header-nav-link:hover, .header-nav-link.active { color: var(--gold); }
+.header-nav-link::after { background: var(--gold); }
+.header-login:hover { border-color: var(--gold); color: var(--gold); background: rgba(184,233,134,0.1); }
+.hamburger-btn { border-color: rgba(255,255,255,0.18); }
+.hamburger-btn:hover { border-color: var(--gold); background: rgba(184,233,134,0.1); }
+.mobile-nav { background: #0c2a34; border-left-color: rgba(184,233,134,0.16); }
+.mobile-nav-link:hover, .mobile-nav-link.active { color: var(--gold); background: rgba(184,233,134,0.1); }
+.mobile-nav-login:hover { border-color: var(--gold); color: var(--gold); }
+.mobile-nav-close:hover { border-color: rgba(239,100,78,0.5); }
